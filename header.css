@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #0f172a;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(2, 6, 23, 0.8); 
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+
+.topnav .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 14px 16px;
+  display: inline-block;
+  color: #22D3EE;
+  letter-spacing: 1px;
+}
+
+.topnav a {
+  color: #94A3B8; 
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 4px 8px;
+}
+
+.topnav #myLinks a:hover {
+  color: #22D3EE; 
+  background-color: rgba(30, 41, 59, 0.5); 
+}
+
+.topnav a.active {
+  color: #22D3EE;
+  background: linear-gradient(
+    90deg,
+    rgba(6, 182, 212, 0.2) 0%, 
+    rgba(168, 85, 247, 0.2) 100% 
+  );
+}
+
+#myLinks {
+  display: none;
+  background-color: rgba(2, 6, 23, 0.8); 
+  border-top: 1px solid rgba(30, 41, 59, 0.5);
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  color: white;
+  padding: 14px 16px;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .topnav .logo {
+        font-size: 1.8rem;
+    }
+    .topnav #myLinks a {
+        font-size: 1.5rem;
+    }
+    .topnav a.icon {
+        width: auto;
+        font-size: 1.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 1000px) {
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 5rem; 
+  }
+
+  #myLinks {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; 
+    width: auto;
+    background-color: transparent;
+  }
+
+  .topnav #myLinks a {
+    display: inline-block; 
+  }
+
+
+  .icon {
+    display: none;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+
+  .topnav .logo {
+    font-size: 1.7rem;
+  }
+
+  .topnav #myLinks a {
+    font-size: 1rem;
+  }
+
+  .topnav .logo{
+    font-size: 1.2rem;
+  }
+ }
