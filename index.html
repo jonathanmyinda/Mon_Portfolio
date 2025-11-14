@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 lg:via-slate-950">
     <header class="topnav">
             <a href="#home" class="logo">JM.</a>
             <div id="myLinks">
@@ -37,35 +37,35 @@
                 <i id="menuIcon" class="fa fa-bars"></i>
             </a>
     </header>
-    <section>
-        <div>
+    <section class="flex flex-row items-center justify-center text-center min-h-screen lg:max-h-screen md:w-[80%] lg:w-full mx-auto">
+        <div class="lg:w-[50%] lg:mx-auto lg:flex lg:flex-col lg:text-left px-6 lg:px-12">
             <div>
-                <p>Disponible pour des projets</p>
-                <h1>Bonjour, je suis</h1>
-                <span>Jonathan Myinda</span>
-                <p>Développeur Web & Mobile</p>
-                <p>UX/UI Designer</p>
-                <p>Passionné par le numérique et la création digitale, je conçois des interfaces web et mobiles intuitives et esthétiques. Mon approche allie logique technique et sens du design pour créer des expériences utilisateur engageantes et performantes.</p>
+                <p class="text-[#22D3EE] bg-gradient-to-r from-cyan-300/15 to-purple-300/15 w-64 mx-auto lg:mx-0 h-8 rounded-full border border-cyan-500/40 px-3 py-1 mb-6 md:w-80 md:h-12 md:text-xl md:px-4 md:py-2 lg:px-9 lg:py-2 md:mb-12">Disponible pour des projets</p>
+                <h1 class="text-4xl text-white md:text-6xl">Bonjour, je suis</h1>
+                <span class="text-4xl md:text-6xl mb-4 md:mb-8 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">Jonathan Myinda</span>
+                <p class="text-[#06B6D4] mt-[1rem] text-xl md:text-2xl">Développeur Web & Mobile</p>
+                <p class="text-[#C084FC] mt-[1rem] md:text-xl">UX/UI Designer</p>
+                <p class="text-gray-400 mt-[1rem] md:text-lg">Passionné par le numérique et la création digitale, je conçois des interfaces web et mobiles intuitives et esthétiques. Mon approche allie logique technique et sens du design pour créer des expériences utilisateur engageantes et performantes.</p>
             </div>
-            <div>
-                <a href="#">Voir mes projets</a>
-                <a href="#">Me contacter</a>
+            <div class="mt-[1.5rem] gap-2 flex flex-row items-center lg:items-start justify-center lg:justify-start">
+                <a href="Projets.html" class="w-[12rem] px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 text-white rounded-lg flex items-center gap-2 hover:shadow-lg hover:shadow-cyan-500/50 transition-all md:w-48">Voir mes projets <i class="fa fa-arrow-right"></i></a>
+                <a href="Contact.html" class="w-[9rem] px-6 py-3 border border-cyan-500/50 text-cyan-400 rounded-lg hover:bg-cyan-500/10 transition-all md:w-40">Me contacter</a>
             </div>
-            <div>
-                <a href="https://github.com/yourusername" target="_blank">
+            <div class="flex flex-row items-center lg:items-start justify-center lg:justify-start gap-2 mt-6">
+                <a href="https://github.com/yourusername" target="_blank" class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-slate-700 text-slate-400 hover:border-cyan-500 hover:text-cyan-400 transition-all">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-slate-700 text-slate-400 hover:border-cyan-500 hover:text-cyan-400 transition-all">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank">
+                <a href="https://twitter.com/yourusername" target="_blank" class="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full border border-slate-700 text-slate-400 hover:border-cyan-500 hover:text-cyan-400 transition-all">
                     <i class="fa-brands fa-twitter"></i>
                 </a>
             </div>
         </div>
-        <div>
-            <img src="" alt="">
-        </div>
+        <div class="lg:w-[50%]">
+            <img src="media/photo.jpeg" alt="Photo profil" class="hidden lg:block lg:w-[80%] lg:mx-auto lg:min-h-screen shadow-2xl shadow-slate-700">
+        </div> c
     </section>
     <script src="header.js"></script>
 </body>
