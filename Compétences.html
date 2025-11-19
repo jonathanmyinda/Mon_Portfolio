@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenu dans mon portfolio</title>
+    <title>Mes compétances</title>
     <link rel="stylesheet" href="header.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -37,141 +37,145 @@
             <i id="menuIcon" class="fa fa-bars"></i>
         </a>
     </div>
-    <section>
-        <div>
-            <h1>Mes <span>Compétences</span></h1>
-            <p>Technologies et savoir-faire</p>
+    <section class="w-[90%] mx-auto mt-6">
+        <div class="text-center mb-6">
+            <h1 class="text-white text-2xl md:text-3xl">Mes <span class="bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text ">Compétences</span></h1>
+            <p class="text-gray-400 text-sm md:text-base">Technologies et savoir-faire</p>
         </div>
         <div>
-            <h2>
-                <i class="fa fa-laptop-code"></i>
+            <h2 class="text-xl text-white md:text-2xl">
+                <i class="fa fa-code text-cyan-400"></i>
                 Compétences Techniques
             </h2>
-            <div>
-                <i class="fa fa-code"></i>
-                <h5>Frontend</h5>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-server"></i>
-                <h5>back-end</h5>
-                <ul>
-                    <li>Node.js</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-mobile-alt"></i>
-                <h5>Mobile</h5>
-                <ul>
-                    <li>React Native</li>
-                    <li>Flutter</li>
-                    <li>Dart</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-database"></i>
-                <h5>Base de données</h5>
-                <ul>
-                    <li>SQL</li>
-                    <li>MySQL</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-cogs"></i>
-                <h5>API & Services</h5>
-                <ul>
-                    <li>REST API</li>
-                    <li>GraphQL</li>
-                    <li>Firebase</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-tools"></i>
-                <h5>Outils</h5>
-                <ul>
-                    <li>Git</li>
-                    <li>GitHub/GitLab</li>
-                    <li>Docker</li>
-                    <li>CI/CD</li>
-                    <li>IA</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fa fa-shield-alt"></i>
-                <h5>Sécurité</h5>
-                <ul>
-                    <li>JWT</li>
-                    <li>OAuth</li>
-                    <li>Sécurité des données</li>
-                </ul>
-            </div>
-            <div>
-                <i></i>
-                <h5>Testing</h5>
-                <ul>
-                    <li>Jest</li>
-                    <li>Mocha</li>
-                    <li>Cypress</li>
-                    <li>Test unitaire</li>
-                </ul>
+            <div class="md:flex md:flex-wrap md:gap-4 md:justify-center">  
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-cyan-700 gap-8 hover:shadow-lg hover:shadow-cyan-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-globe text-cyan-400 bg-cyan-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-cyan-400 md:text-lg">Frontend</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-cyan-300 w-[90%] mx-auto ">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-purple-700 gap-8 hover:shadow-lg hover:shadow-purple-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-server text-purple-400 bg-purple-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-purple-400 md:text-lg">back-end</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-purple-300 w-[90%] mx-auto">
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-blue-700 gap-8 hover:shadow-lg hover:shadow-blue-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-mobile-alt text-blue-400 bg-blue-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-blue-400 md:text-lg">Mobile</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-blue-300 w-[90%] mx-auto">
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-green-700 gap-8 hover:shadow-lg hover:shadow-green-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-database text-green-400 bg-green-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-green-400 md:text-lg">Base de données</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-green-300 w-[90%] mx-auto">
+                        <li>SQL</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-orange-700 gap-8 hover:shadow-lg hover:shadow-orange-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-cogs text-orange-400 bg-orange-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-orange-400 md:text-lg">API & Services</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-orange-300 w-[90%] mx-auto">
+                        <li>REST API</li>
+                        <li>GraphQL</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-pink-700 gap-8 hover:shadow-lg hover:shadow-pink-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-tools text-pink-400 bg-pink-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-pink-400 md:text-lg">Outils</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-pink-300 w-[90%] mx-auto">
+                        <li>Git</li>
+                        <li>GitHub/GitLab</li>
+                        <li>Docker</li>
+                        <li>CI/CD</li>
+                        <li>IA</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-red-700 gap-12 hover:shadow-lg hover:shadow-red-500/20 transition-all md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-shield-alt text-red-400 bg-red-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-red-400 md:text-lg">Sécurité</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-red-300 w-[90%] mx-auto">
+                        <li>JWT</li>
+                        <li>OAuth</li>
+                        <li>Sécurité des données</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-950 p-4 rounded-md mt-4 border border-teal-700 gap-8 hover:shadow-lg hover:shadow-teal-500/20 transition-all  md:w-[48%] mx-auto lg:w-[23%]">
+                    <i class="fa fa-vial text-teal-400 bg-teal-500/10 w-8 h-8 flex text-center rounded-md px-2 py-2"></i>
+                    <h5 class="text-teal-400 md:text-lg">Testing</h5>
+                    <ul class="text-gray-500 text-xs md:text-sm list-disc marker:text-teal-300 w-[90%] mx-auto">
+                        <li>Jest</li>
+                        <li>Mocha</li>
+                        <li>Cypress</li>
+                        <li>Test unitaire</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div>
-            <h2>
-                <i class="fa fa-user-friends"></i>
+            <h2 class="text-xl text-white mt-6 md:text-2xl">
+                <i class="fa fa-user-friends text-purple-400"></i>
                 Soft Skills
             </h2>
-            <div>
-                <i class="fa fa-lightbulb"></i>
-                <div>
-                    <h5>Résolution de problèmes</h5>
-                    <span>Capacité à analyser et résoudre des problèmes complexes de manière efficace</span>
+            <div class="lg:flex lg:flex-wrap ">
+                <div class="flex mx-auto mt-4 bg-slate-950 p-4 rounded-md border border-cyan-700 gap-8 hover:shadow-lg hover:shadow-cyan-500/20 transition-all lg:w-[48%]">
+                    <i class="fa fa-lightbulb text-cyan-400 bg-cyan-500/10 w-8 h-8 text-center rounded-md px-2 py-2 gap-2"></i>
+                    <div>
+                        <h5 class="text-cyan-400 md:text-xl">Résolution de problèmes</h5>
+                        <span class="text-gray-500 md:text-lg">Capacité à analyser et résoudre des problèmes complexes de manière efficace</span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <i class="fa fa-comments"></i>
-                <div>
-                    <h5>Communication</h5>
-                    <span>Excellente communication écrite et verbale avec les équipes et clients</span>
+                <div class="flex mx-auto mt-4 bg-slate-950 p-4 rounded-md border border-purple-700 gap-8 hover:shadow-lg hover:shadow-purple-500/20 transition-all lg:w-[48%]">
+                    <i class="fa fa-comments text-purple-400 bg-purple-500/10 w-8 h-8 text-center rounded-md px-2 py-2 gap-2"></i>
+                    <div>
+                        <h5 class="text-purple-400 md:text-xl">Communication</h5>
+                        <span class="text-gray-500 md:text-lg">Excellente communication écrite et verbale avec les équipes et clients</span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <i class="fa fa-users"></i>
-                <div>
-                    <h5>Travail en équipe</h5>
-                    <span>Collaboration efficace au sein d'équipes multidisciplinaires</span>
+                <div class="flex mx-auto mt-4 bg-slate-950 p-4 rounded-md border border-blue-700 gap-8 hover:shadow-lg hover:shadow-blue-500/20 transition-all lg:w-[48%]">
+                    <i class="fa fa-users text-blue-400 bg-blue-500/10 w-8 h-8 text-center rounded-md px-2 py-2 gap-2"></i>
+                    <div>
+                        <h5 class="text-blue-400 md:text-xl">Travail en équipe</h5>
+                        <span class="text-gray-500 md:text-lg">Collaboration efficace au sein d'équipes multidisciplinaires</span>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <i class="fa fa-lightbulb"></i>
-                <div>
-                    <h5>Apprentissage rapide</h5>
-                    <span>Curiosité naturelle et capacité à maîtriser rapidement de nouvelles technologies</span>
+                <div class="flex mx-auto mt-4 bg-slate-950 p-4 rounded-md border border-green-700 gap-8 hover:shadow-lg hover:shadow-green-500/20 transition-all lg:w-[48%]">
+                    <i class="fa fa-lightbulb text-green-400 bg-green-500/10 w-8 h-8 text-center rounded-md px-2 py-2 gap-2"></i>
+                    <div>
+                        <h5 class="text-green-400 md:text-xl">Apprentissage rapide</h5>
+                        <span class="text-gray-500 md:text-lg">Curiosité naturelle et capacité à maîtriser rapidement de nouvelles technologies</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h2>15+</h2>
-                <span>Technologies</span>
+        <div class="flex flex-wrap gap-[4%] lg:gap-[2%] mb-10 mx-auto mt-6">
+            <div class="w-[48%] bg-slate-950 p-4 rounded-md mt-6 border border-cyan-700 gap-8 hover:shadow-lg hover:shadow-cyan-500/20 transition-all text-center lg:w-[23%] mx-auto">
+                <h2 class="text-cyan-400 md:text-xl">15+</h2>
+                <span class="text-gray-400 md:text-lg">Technologies</span>
             </div>
-            <div>
-                <h2>10+</h2>
-                <span>Projets</span>
+            <div class="w-[48%] bg-slate-950 p-4 rounded-md mt-6 border border-purple-700 gap-8 hover:shadow-lg hover:shadow-purple-500/20 transition-all text-center lg:w-[23%] mx-auto">
+                <h2 class="text-purple-400 md:text-xl">10+</h2>
+                <span class="text-gray-400 md:text-lg">Projets</span>
             </div>
-            <div>
-                <h2>6+</h2>
-                <span>Formations</span>
+            <div class="w-[48%] bg-slate-950 p-4 rounded-md mt-6 border border-blue-700 gap-8 hover:shadow-lg hover:shadow-blue-500/20 transition-all text-center lg:w-[23%] mx-auto">
+                <h2 class="text-blue-400 md:text-xl">6+</h2>
+                <span class="text-gray-400 md:text-lg">Formations</span>
             </div>
-            <div>
-                <h2>∞</h2>
-                <span>En apprentissage</span>
+            <div class="w-[48%] bg-slate-950 p-4 rounded-md mt-6 border border-green-700 gap-8 hover:shadow-lg hover:shadow-green-500/20 transition-all text-center lg:w-[23%] mx-auto
+                <h2 class="text-green-400 md:text-2xl">∞</h2>
+                <span class="text-gray-400 md:text-lg">En apprentissage</span>
             </div>
         </div>
     </section>
