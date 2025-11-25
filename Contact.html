@@ -37,47 +37,54 @@
             <i id="menuIcon" class="fa fa-bars"></i>
         </a>
     </div>
-    <section>
-        <div>
-            <h1>Contactez-moi</h1>
-            <p>Contactez-moi</p>
+    <section class="w-[90%] mx-auto mt-16">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-2xl text-white">Contactez-<span class="bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">moi</span></h1>
+            <p class="text-gray-400 mt-3">Discutons de votre prochain projet</p>
         </div>
         <div>
             <div>
                 <div>
-                    <h2>Restons connectés</h2>
-                    <p>Je suis toujours ouvert à discuter de nouveaux projets, d'opportunités de collaboration ou simplement échanger sur la technologie et le développement web.</p>
+                    <h2 class="text-white text-2xl m-5">Restons connectés</h2>
+                    <p class="text-gray-400 ">Je suis toujours ouvert à discuter de nouveaux projets, d'opportunités de collaboration ou simplement échanger sur la technologie et le développement web.</p>
                 </div>
-                <div>
-                    <a href="mailto:myindajonthan@gmail.com">
-                        <i class="fa fa-envelope"></i>
-                        <span>Email</span>
-                        myindajonthan@gmail.com
-                    </a>
-                    <a href="tel:+243980215272">
-                        <i class="fa fa-phone"></i>
-                        <span>Téléphone</span>
-                        +243980215272
-                    </a>
-                    <p>
-                        <i class="fa fa-map-marker-alt"></i>
-                        <span>Localisation</span>
-                        République Démocratique du Congo
-                    </p>
+                <div class="bg-slate-950 flex gap-6 p-6 rounded-lg mt-6 border border-gray-800 hover:border-gray-600">
+                     <i class="fa fa-envelope text-2xl fa fa-mobile-alt text-blue-400 bg-blue-500/10 w-12 h-12 flex text-center rounded-md px-2 py-3"></i>
+                     <div class="flex flex-col">
+                        <span class="text-gray-400">Email</span>
+                        <a href="mailto:myindajonthan@gmail.com" class="text-cyan-400 hover:underline">myindajonthan@gmail.com</a>
+                     </div>
                 </div>
-                <div>
-                    <h3>Retrouvez-moi sur</h3>
-                    <a href="#github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
+                <div class="bg-slate-950 flex gap-6 p-6 rounded-lg mt-6 border border-gray-800 hover:border-gray-600">
+                     <i class="fa fa-phone text-2xl fa fa-mobile-alt text-green-400 bg-green-500/10 w-12 h-12 flex text-center rounded-md px-2 py-3"></i>
+                     <div class="flex flex-col">
+                        <span class="text-gray-400">Téléphone</span>
+                        <a href="tel:+243980215272" class="text-cyan-400 hover:underline">+243 980 215 272</a>
+                     </div>
                 </div>
-                <div>
+                <div class="bg-slate-950 flex gap-6 p-6 rounded-lg mt-6 border border-gray-800 hover:border-gray-600">
+                     <i class="fa fa-map-marker-alt text-2xl fa fa-mobile-alt text-red-400 bg-red-500/10 w-12 h-12 flex text-center rounded-md px-2 py-3"></i>
+                     <div class="flex flex-col">
+                        <span class="text-gray-400">Localisation</span>
+                        <p class="text-white text-sm">République Démocratique du Congo</p>
+                     </div>
+                </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-white mb-3">Retrouvez-moi sur</h3>
+                    <div class="flex gap-2">
+                        <a href="https://github.com/jonathanmyinda" target="_blank" class="bg-slate-950 w-10 h-10 flex items-center justify-center rounded-lg border hover:bg-cyan-500/10 hover:border-cyan-500">
+                            <i class="fa-brands fa-github text-gray-400"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jonathanmyinda" target="_blank" class="bg-slate-950 w-10 h-10 flex items-center justify-center rounded-lg border hover:bg-cyan-500/10 hover:border-cyan-500">
+                            <i class="fa-brands fa-linkedin text-gray-400"></i>
+                        </a>
+                        <a href="https://x.com/jonathanmyinda" target="_blank" class="bg-slate-950 w-10 h-10 flex items-center justify-center rounded-lg border hover:bg-cyan-500/10 hover:border-cyan-500">
+                            <i class="fa-brands fa-twitter text-gray-400"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden">
                     <i class="fa fa-message"></i>
                     <blockquote>
                         <q>
@@ -87,22 +94,20 @@
                     </blockquote>
                 </div>
             </div>
-            <div>
-                <label for="name">Nom complet</label>
-                <input type="text" id="name" placeholder="Votre nom">
-                <label for="mail">Email</label>
-                <input type="email" id="mail" placeholder="votre@gmail.com">
-                <label for="subject">Sujet</label>
-                <input type="text" id="subject" placeholder="Sujet de votre message">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10">
-                    votre message...
-                </textarea>
-                <button type="submit">
+            <form action="" method="post" class="flex flex-col gap-4 mt-8 bg-slate-950/20 p-6 rounded-lg border border-gray-800 mb-10">
+                <label for="name" class="text-white">Nom complet</label>
+                <input type="text" id="name" class="border border-gray-800 rounded-md p-6 placeholder:text-gray-500" placeholder="Votre nom">
+                <label for="mail" class="text-white">Email</label>
+                <input type="email" id="mail" class="border border-gray-800 rounded-md p-6 placeholder:text-gray-500" placeholder="votre@gmail.com">
+                <label for="subject" class="text-white">Sujet</label>
+                <input type="text" id="subject" class="border border-gray-800 rounded-md p-6 placeholder:text-gray-500" placeholder="Sujet de votre message">
+                <label for="message" class="text-white">Message</label>
+                <textarea name="message" id="message"class="border border-gray-800 rounded-md p-6 placeholder:text-gray-500" placeholder="Votre message..." cols="30" rows="10"></textarea>
+                <button type="submit" class="flex bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg items-center justify-center gap-2 hover:shadow-lg hover:shadow-cyan-500/50 transition-all w-full">
                     <i class="fa fa-paper-plane"></i>
                     Envoyez votre message
                 </button>
-            </div>
+            </form>
         </div>
     </section>
     <script src="header.js"></script>
