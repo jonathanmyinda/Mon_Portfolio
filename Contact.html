@@ -95,13 +95,13 @@
             </div>
             <form action="https://formspree.io/f/mdkvrgdd" target="_blank" method="post" id="contactForm" class="flex flex-col gap-4 mt-8 bg-slate-950/20 p-6 rounded-lg border border-gray-800 mb-10 lg:w-[40%]">
                 <label for="name" class="text-white md:text-xl">Nom complet</label>
-                <input type="text" id="name" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Votre nom">
+                <input type="text" required id="name" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Votre nom">
                 <label for="mail" class="text-white md:text-xl">Email</label>
-                <input type="email" id="mail" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="votre@gmail.com">
+                <input type="email" required id="mail" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="votre@gmail.com">
                 <label for="subject" class="text-white md:text-xl">Sujet</label>
-                <input type="text" id="subject" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Sujet de votre message">
+                <input type="text" required id="subject" class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Sujet de votre message">
                 <label for="message" class="text-white md:text-xl">Message</label>
-                <textarea name="message" id="message"class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Votre message..." cols="30" rows="10"></textarea>
+                <textarea name="message" required id="message"class="border border-gray-800 rounded-xl bg-slate-950 p-6 placeholder:text-gray-500 md:placeholder:text-lg text-white" placeholder="Votre message..." cols="30" rows="10"></textarea>
                 <button type="submit" class="flex bg-gradient-to-r from-cyan-500 to-purple-500 text-white px-6 py-3 rounded-lg items-center justify-center gap-2 hover:shadow-lg hover:shadow-cyan-500/50 transition-all w-full md:text-xl">
                     <i class="fa fa-paper-plane"></i>
                     Envoyez votre message
